@@ -15,9 +15,8 @@
  */
 
 # This top section meant to be changed to fit your environment
-  project_name_and_id = "<ENTER PROJECT ID HERE>"
+  project_id = "<ENTER PROJECT ID HERE>"
   gcp_region = "<ENTER REGION HERE>"
-  gcp_zone = "<ENTER ZONE HERE>"
   iteration = "<ENTER AN ITERATION HERE, EG 1>"
   name_base = "<ENTER A NAME HERE, EG MYORG-NAME>"
   cloud_armor_allowed_ips = ["<ENTER AN IP HERE, EG 1.2.3.4/32"]  # add IPs that need access to load balancers, only relevant if enable_cloud_armor below is true
