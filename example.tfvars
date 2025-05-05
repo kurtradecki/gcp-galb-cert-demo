@@ -20,6 +20,8 @@
   iteration = "<ENTER AN ITERATION HERE, EG 1>"
   name_base = "<ENTER A NAME HERE, EG MYORG-NAME>"
   cloud_armor_allowed_ips = ["<ENTER AN IP HERE, EG 1.2.3.4/32"]  # add IPs that need access to load balancers, only relevant if enable_cloud_armor below is true
+  boolorgpols = ["<ENTER CONSTRAINTS HERE COMMA SEPARATED, LEAVE EMPTY IF NONE>"]  # org policy constraints to not enforce in the project - enforced / not enforced type policies
+  listorgpols = ["<ENTER CONSTRAINTS HERE COMMA SEPARATED, LEAVE EMPTY IF NONE>"]  # org policy constraints to allow all in the project - allow all / deny all type org policies
 
 # If needed, set values optional components
   enable_http = true  # true to create HTTP & HTTPS frontends, false to create only HTTPS frontend

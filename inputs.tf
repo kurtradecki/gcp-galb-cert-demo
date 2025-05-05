@@ -18,6 +18,37 @@ variable project_id {
   type = string
 }
 
+/*
+variable "billing_account" {
+  description = "Billing account id."
+  type        = string
+  default     = null
+}
+
+variable "project_parent" {
+  description = "Parent folder or organization in 'folders/folder_id' or 'organizations/org_id' format."
+  type        = string
+  default     = null
+  validation {
+    condition     = var.project_parent == null || can(regex("(organizations|folders)/[0-9]+", var.project_parent)
+)
+    error_message = "Parent must be of the form folders/folder_id or organizations/organization_id."
+  }
+}
+*/
+
+# enforced / not enforced type policies
+variable boolorgpols {
+  description = "APIs to enable"
+  type        = list(string)
+}
+
+# allow all / deny all type org policies
+variable listorgpols {
+  description = "APIs to enable"
+  type        = list(string)
+}
+
 variable gcp_region {
   type = string    
 }
