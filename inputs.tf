@@ -14,66 +14,76 @@
  * limitations under the License.
  */
 
-variable project_id {
+variable "project_id" {
   type = string
 }
 
-variable gcp_region {
-  type = string    
+variable "boolorgpols" {
+  description = "boolean org policies to enable"
+  type        = list(string)
 }
 
-variable url_map_name {
-  type = string    
+variable "listorgpols" {
+  description = "allow all / deny all org policies to enable"
+  type        = list(string)
 }
 
-variable cert_name_prefix {
+variable "gcp_region" {
   type = string
 }
 
-variable lb_static_ip_name_prefix {
-  type = string    
-}
-
-variable cloudarmor_policy_name_prefix{
+variable "url_map_name" {
   type = string
 }
 
-variable forwarding_rule_name_prefix {
-  type = string    
-}
-
-variable proxy_http_name_prefix {
-  type = string   
-}
-
-variable backend_service_name_prefix {
+variable "cert_name_prefix" {
   type = string
 }
 
-variable name_base {
+variable "lb_static_ip_name_prefix" {
   type = string
 }
 
-variable cloudrun_neg_name_prefix {
+variable "cloudarmor_policy_name_prefix" {
   type = string
 }
 
-variable cloudrun_svc_name_prefix {
+variable "forwarding_rule_name_prefix" {
   type = string
 }
 
-variable iteration {
+variable "proxy_http_name_prefix" {
   type = string
 }
 
-variable enable_http {
+variable "backend_service_name_prefix" {
+  type = string
+}
+
+variable "name_base" {
+  type = string
+}
+
+variable "cloudrun_neg_name_prefix" {
+  type = string
+}
+
+variable "cloudrun_svc_name_prefix" {
+  type = string
+}
+
+variable "iteration" {
+  type = string
+}
+
+variable "enable_http" {
   type = bool
 }
 
-variable enable_cloud_armor {
+variable "enable_cloud_armor" {
   type = bool
 }
 
-variable cloud_armor_allowed_ips {
+variable "cloud_armor_allowed_ips" {
   type = list(string)
 }
