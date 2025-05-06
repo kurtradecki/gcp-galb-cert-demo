@@ -18,7 +18,7 @@ For visual guidance how to clone the repo, see this X-minute video: [How to Crea
 git clone https://github.com/kurtradecki/gcp-galb-cert-demo.git
 ```
 
-2. Ensure you have an active GCP account selected in the Cloud shell
+2. Ensure you have an active GCP account selected to run gcloud commands with [gcloud CLI](https://cloud.google.com/sdk/docs/install) (not needed in Cloud Shell).
 
 ```sh
 gcloud auth login
