@@ -7,10 +7,10 @@
 * The script sets the Google Cloud org policy constraints/iam.allowedPolicyMemberDomains to allow all at the project level, so the script may fail in highly regulated environments.
 * The actions taken by deploying this repo will add cost. To minimize costs, instructions are provided for how to teardown the demo environment. For more on cost, please refer to Google Cloud public pricing pages for components such as Cloud Run, Global Application Load Balancers, Reserved Public IP Addresses, Data Transfer, and Certificate Manager. 
 * Serverless NEG does not as April 2025 support health checks, so no health check in the script. See Serverless network endpoint groups overview > [Limitations with backend services](https://cloud.google.com/load-balancing/docs/negs/serverless-neg-concepts#backend-service-limitations).
+* For visual guidance how to manually perform the setup in the GCP console, see this short video: [How to Create an Global Application Load Balancer with Cloud Run Backend](https://www.youtube.com/watch?v=JRiStVpTH1w)
+
 
 ## Setup instructions
-
-For visual guidance how to manually perform the setup in the GCP console, see this short video: [How to Create an Global Application Load Balancer with Cloud Run Backend](https://www.youtube.com/watch?v=JRiStVpTH1w)
 
 1. Clone the this repo
 
