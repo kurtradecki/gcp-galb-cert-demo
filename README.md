@@ -10,7 +10,7 @@
 
 ## Setup instructions
 
-For visual guidance how to clone the repo, see this X-minute video: [How to Create an Global Application Load Balancer with Cloud Run Backend](https://www.youtube.com/watch?v=JRiStVpTH1w)
+For visual guidance how to manually perform the setup in the GCP console, see this short video: [How to Create an Global Application Load Balancer with Cloud Run Backend](https://www.youtube.com/watch?v=JRiStVpTH1w)
 
 1. Clone the this repo
 
