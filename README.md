@@ -43,7 +43,7 @@ terraform apply -auto-approve
 
 ## Test reaching the application
 
-In the GCP Console, access the created load balancer. There you'll find the IP address for HTTP access (if the optional HTTP forwarding rule was deployed), http://<ip-address>. Click the link to the cert in the load balancer where you'll find the URL for HTTPS access in the form of https://#.#.#.#.nip.io
+In the GCP Console, access the created load balancer that has the name lb-ga1 (or lb-ga followed by a different # if the value of the iteration variable is modified in terraform.tfvars). There you'll find the IP address for HTTP access (if the optional HTTP forwarding rule was deployed), http://<ip-address>. Click the link to the cert in the load balancer where you'll find the URL for HTTPS access in the form of https://#.#.#.#.nip.io
 
 Note that it may take 2-3 minutes for the HTTP access to the Cloud Run backend to become operational. 
 
