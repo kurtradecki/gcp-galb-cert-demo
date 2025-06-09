@@ -14,6 +14,16 @@
  * limitations under the License.
  */
 
+terraform {
+  required_version = ">= 1.8"
+
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "~> 6.38.0 "
+    }
+  }
+}
 
 # ======= APIs and Org Policies =======
 # APIs needed: Compute Engine, Cloud Run Admin, Certificate Manager
