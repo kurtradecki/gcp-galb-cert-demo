@@ -60,10 +60,6 @@ variable "backend_service_name_prefix" {
   type = string
 }
 
-variable "name_base" {
-  type = string
-}
-
 variable "cloudrun_neg_name_prefix" {
   type = string
 }
